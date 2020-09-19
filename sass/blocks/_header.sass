@@ -1,5 +1,27 @@
-header 
-  width: 100%
-  min-height: 900px
+.navbar
   background-image: url(../img/first-screen.jpg)
-  
+  background-repeat: no-repeat
+  background-position: top
+  background-size: cover
+  max-width: 1920px
+  min-height: 800px
+  &-top
+    display: flex
+    flex-wrap: nowrap
+  &-menu
+    margin: 0
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    padding-top: 40px
+    padding-bottom: 40px
+    color: $light
+    border: 1px solid red
+    &-item
+      font-style: normal
+      font-weight: 500
+      font-size: 16px
+      line-height: 20px
+    &-link
+      color: inherit
+

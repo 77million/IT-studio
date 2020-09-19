@@ -1,15 +1,55 @@
-header {
-  width: 100%;
-  min-height: 900px;
+.navbar {
   background-image: url(../img/first-screen.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  max-width: 1920px;
+  min-height: 800px;
+}
+
+.navbar-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.navbar-menu {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #ffffff;
+  border: 1px solid red;
+}
+
+.navbar-menu-item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.navbar-menu-link {
+  color: inherit;
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #F5FAFE;
   color: #333333;
 }
@@ -21,6 +61,14 @@ body {
 
 img {
   max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -69,7 +117,8 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -106,7 +155,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -253,7 +303,8 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -287,7 +338,8 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
