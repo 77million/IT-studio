@@ -3,10 +3,11 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  max-width: 1920px;
-  min-height: 800px;
+  min-width: 1920px;
+  min-height: 900px;
   padding-top: 40px;
   padding-bottom: 40px;
+  padding-right: 20em;
 }
 
 .navbar-top {
@@ -19,6 +20,9 @@
   margin: 0;
   display: flex;
   align-items: center;
+  min-width: 573px;
+  height: 59px;
+  padding: 0 20px;
   justify-content: space-between;
   color: #ffffff;
   border: 1px solid red;
@@ -27,7 +31,7 @@
 .navbar-menu-item {
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 20px;
   justify-content: space-between;
 }
