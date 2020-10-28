@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .navbar {
   background-image: url(../img/first-screen.jpg);
   background-repeat: no-repeat;
@@ -21,11 +22,10 @@
   display: flex;
   align-items: center;
   min-width: 573px;
-  height: 59px;
+  height: 90px;
   padding: 0 20px;
   justify-content: space-between;
   color: #ffffff;
-  border: 1px solid red;
 }
 
 .navbar-menu-item {
@@ -38,6 +38,36 @@
 
 .navbar-menu-link {
   color: inherit;
+}
+
+.navbar-menu-link {
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  color: #ffffff;
+  /*от */
+  line-height: 3;
+}
+
+.navbar-menu-link::before, .navbar-menu-link::after {
+  background-color: #ffffff;
+  /* display: inline-block; если поставить это значение, линия будет сверху */
+  display: block;
+  content: "";
+  /*задаём высоту линии*/
+  height: 1px;
+  /*задаём начальную ширину элемента (линии)*/
+  width: 0%;
+  /*Подчеркивание начинается с середины*/
+  left: 50%;
+  position: absolute;
+  transition: width 0.3s ease-in-out;
+  transform: translateX(-50%);
+  /*плавное изменение ширины линии */
+}
+
+.navbar-menu-link:hover::after, .navbar-menu-link:focus::after {
+  width: 120%;
 }
 
 .navbar .logo__image {

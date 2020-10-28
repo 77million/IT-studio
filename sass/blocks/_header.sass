@@ -17,11 +17,11 @@
     display: flex
     align-items: center
     min-width: 573px
-    height: 59px
+    height: 90px
     padding: 0 20px
     justify-content: space-between
     color: $light
-    border: 1px solid red
+    // border: 1px solid red
     &-item
       font-style: normal
       font-weight: 500
@@ -30,6 +30,35 @@
       justify-content: space-between
     &-link
       color: inherit
+    &-link
+      text-decoration: none
+      text-align: center
+      position: relative
+      color: $light
+      /*от line-height зависит расстояние, на котором будет линия*/
+      line-height: 3
+    &-link::before,
+    &-link::after 
+      background-color: $light
+      /* display: inline-block; если поставить это значение, линия будет сверху */
+      display: block 
+      content: ""
+      /*задаём высоту линии*/
+      height: 1px
+      /*задаём начальную ширину элемента (линии)*/
+      width: 0%
+      /*Подчеркивание начинается с середины*/
+      left: 50%
+      position: absolute
+      transition: width 0.3s ease-in-out
+      transform: translateX(-50%)
+      /*плавное изменение ширины линии */
+    // &-link:hover::before,
+    // &-link:focus::before
+    //   width: 120%
+    &-link:hover::after,
+    &-link:focus::after
+      width: 120%
   .logo
     &__image
       margin-left: 40px
