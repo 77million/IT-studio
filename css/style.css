@@ -4,10 +4,10 @@
   background-repeat: no-repeat;
   background-position: top;
   margin: auto;
-  min-height: 900px;
+  min-height: 600px;
   background-size: 100%;
+  margin-bottom: 7rem;
   padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 .navbar-top {
@@ -97,11 +97,22 @@
 }
 
 .about {
+  display: block;
+  margin: 0 auto;
+  display: block;
   margin-bottom: 2rem;
 }
 
-.about-description {
+.about__title {
+  position: relative;
   text-align: center;
+  padding: 0 200px;
+}
+
+.about-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @font-face {
@@ -174,6 +185,7 @@ p {
   font-size: 16px;
   line-height: 25px;
   color: #999999;
+  max-width: 1170px;
 }
 
 button {
