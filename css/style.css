@@ -96,6 +96,14 @@
   color: #ffffff;
 }
 
+.about {
+  margin-bottom: 2rem;
+}
+
+.about-description {
+  text-align: center;
+}
+
 @font-face {
   font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Regular.eot");
@@ -119,7 +127,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #F5FAFE;
-  color: #333333;
+  color: #323232;
 }
 
 .container {
@@ -132,6 +140,14 @@ h1 {
   font-size: 48px;
   line-height: 64px;
   text-align: center;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+  color: #323232;
 }
 
 h3 {
@@ -150,6 +166,14 @@ a {
 
 li {
   list-style-type: none;
+}
+
+p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: #999999;
 }
 
 button {
