@@ -2,12 +2,11 @@
   background-image: url(../img/first-screen.jpg)
   background-repeat: no-repeat
   background-position: top
-  background-size: cover
-  min-width: 1920px
+  margin: auto
   min-height: 900px
+  background-size: 100%
   padding-top: 40px
   padding-bottom: 40px
-  padding-right: 20em
   &-top
     display: flex
     align-items: center
@@ -21,24 +20,22 @@
     padding: 0 20px
     justify-content: space-between
     color: $light
-    border: 1px solid red
-    &-item
+    &__item
       font-style: normal
       font-weight: 500
-      font-size: 20px
+      font-size: 16px
       line-height: 20px
       justify-content: space-between
-    &-link
-      color: inherit
-    &-link
+    &__link
+      position: relative
       text-decoration: none
       text-align: center
-      position: relative
+      padding: 15px
       color: $light
       /*от line-height зависит расстояние, на котором будет линия*/
       line-height: 3
-    &-link::before,
-    &-link::after 
+    &__link::before,
+    &__link::after 
       background-color: $light
       /* display: inline-block; если поставить это значение, линия будет сверху */
       display: block 
@@ -50,26 +47,27 @@
       /*Подчеркивание начинается с середины*/
       left: 50%
       position: absolute
+      /*плавное изменение ширины линии */
       transition: width 0.3s ease-in-out
       transform: translateX(-50%)
-      /*плавное изменение ширины линии */
-    // &-link:hover::before,
-    // &-link:focus::before
+    //линия сверху
+    // &__link:hover::before,
+    // &__link:focus::before
     //   width: 120%
-    &-link:hover::after,
-    &-link:focus::after
-      width: 120%
+    &__link:hover::after,
+    &__link:focus::after
+      width: 100%
   .logo
     &__image
       margin-left: 40px
       width: 140px
 .header-block
-  display: flex
+  display: block
+  margin-top: 100px
+  margin-bottom: 335px
   text-align: center
-  align-items: center
   min-width: 830px
   color: $light
-  &-study
-    color: $light
-    font-size: 20px
+
+  
 
