@@ -5,8 +5,7 @@
   background-position: top;
   margin: auto;
   min-height: 900px;
-  background-size: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 7rem;
   padding-top: 10px;
 }
 
@@ -72,11 +71,10 @@
 }
 
 .header-block {
-  display: block;
-  margin-top: 70px;
-  margin-bottom: 335px;
-  text-align: center;
-  min-width: 830px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10rem;
   color: #ffffff;
 }
 
@@ -84,7 +82,7 @@
   display: block;
   margin: 0 auto;
   display: block;
-  margin-bottom: 2rem;
+  margin-bottom: 7rem;
 }
 
 .about__title {
@@ -162,6 +160,7 @@ h2 {
   line-height: 53px;
   text-align: center;
   color: #323232;
+  margin-bottom: 2rem;
 }
 
 h3 {
