@@ -1,122 +1,4 @@
 @charset "UTF-8";
-.navbar {
-  background-image: url(../img/first-screen.jpg);
-  background-repeat: no-repeat;
-  background-position: top;
-  margin: auto;
-  min-height: 900px;
-  margin-bottom: 7rem;
-  padding-top: 10px;
-}
-
-.navbar-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar-menu {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  min-width: 573px;
-  height: 90px;
-  padding: 0 20px;
-  justify-content: space-between;
-  color: #ffffff;
-}
-
-.navbar-menu__item {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  justify-content: space-between;
-}
-
-.navbar-menu__link {
-  position: relative;
-  text-decoration: none;
-  text-align: center;
-  padding: 15px;
-  color: #ffffff;
-  /*от line-height зависит расстояние, на котором будет линия*/
-  line-height: 3;
-}
-
-.navbar-menu__link::before, .navbar-menu__link::after {
-  background-color: #ffffff;
-  /* display: inline-block; если поставить это значение, линия будет сверху */
-  display: block;
-  content: "";
-  /*задаём высоту линии*/
-  height: 1px;
-  /*задаём начальную ширину элемента (линии)*/
-  width: 0%;
-  /*Подчеркивание начинается с середины*/
-  left: 50%;
-  position: absolute;
-  /*плавное изменение ширины линии */
-  transition: width 0.3s ease-in-out;
-  transform: translateX(-50%);
-}
-
-.navbar-menu__link:hover::after, .navbar-menu__link:focus::after {
-  width: 100%;
-}
-
-.navbar .logo__image {
-  margin-left: 40px;
-  width: 140px;
-}
-
-.header-block {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 10rem;
-  color: #ffffff;
-}
-
-.about {
-  display: block;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 7rem;
-}
-
-.about__title {
-  position: relative;
-  text-align: center;
-  padding: 0 200px;
-}
-
-.about-services {
-  display: flex;
-  padding: 0 1rem;
-}
-
-.about-service {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 1rem;
-}
-
-.about-service__right {
-  padding: 6rem 1rem 1rem 1rem;
-  font-size: 14px;
-}
-
-.about-service__subtitle {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 22px;
-}
-
-.about-service__description {
-  font-size: 14px;
-}
-
 @font-face {
   font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Regular.eot");
@@ -543,5 +425,151 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+.navbar {
+  background-image: url(../img/first-screen.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  margin: auto;
+  min-height: 900px;
+  margin-bottom: 7rem;
+  padding-top: 10px;
+}
+
+.navbar-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-menu {
+  margin: 0;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  min-width: 573px;
+  height: 90px;
+  padding: 0 20px;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.navbar-menu__item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  justify-content: space-between;
+}
+
+.navbar-menu__link {
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  color: #ffffff;
+  /*от line-height зависит расстояние, на котором будет линия*/
+  line-height: 3;
+}
+
+.navbar-menu__link::before, .navbar-menu__link::after {
+  background-color: #ffffff;
+  /* display: inline-block; если поставить это значение, линия будет сверху */
+  display: block;
+  content: "";
+  /*задаём высоту линии*/
+  height: 1px;
+  /*задаём начальную ширину элемента (линии)*/
+  width: 0%;
+  /*Подчеркивание начинается с середины*/
+  left: 50%;
+  position: absolute;
+  /*плавное изменение ширины линии */
+  transition: width 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.navbar-menu__link:hover::after, .navbar-menu__link:focus::after {
+  width: 100%;
+}
+
+.navbar .logo__image {
+  margin: 0 40px;
+  width: 140px;
+}
+
+.header-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10rem;
+  color: #ffffff;
+}
+
+.about {
+  display: block;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 7rem;
+}
+
+.about__title {
+  position: relative;
+  text-align: center;
+  padding: 0 200px;
+}
+
+.about-services {
+  display: flex;
+  padding: 0 1rem;
+}
+
+.about-service {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.about-service__right {
+  padding: 6rem 1rem 1rem 1rem;
+  font-size: 14px;
+}
+
+.about-service__subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.about-service__description {
+  font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 760px;
+  }
+  .logo {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 99px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
