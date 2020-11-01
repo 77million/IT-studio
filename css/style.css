@@ -27,6 +27,7 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1170px;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -431,6 +432,7 @@ template {
   background-image: url(../img/first-screen.jpg);
   background-repeat: no-repeat;
   background-position: top;
+  background-size: cover;
   margin: auto;
   min-height: 900px;
   margin-bottom: 7rem;
@@ -444,8 +446,7 @@ template {
 }
 
 .navbar-menu {
-  margin: 0;
-  margin-left: 40px;
+  margin: 0 40px;
   display: flex;
   align-items: center;
   min-width: 573px;
@@ -550,6 +551,9 @@ template {
   .container {
     max-width: 960px;
   }
+  .navbar {
+    margin-bottom: 5rem;
+  }
 }
 
 @media (max-width: 992px) {
@@ -559,11 +563,23 @@ template {
   .logo {
     margin-right: 40px;
   }
+  h2 {
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 2rem;
+  }
+  .about__title {
+    padding: 0 60px;
+  }
 }
 
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 52px;
   }
 }
 
