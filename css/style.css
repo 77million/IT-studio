@@ -581,6 +581,9 @@ template {
     font-size: 40px;
     line-height: 52px;
   }
+  .about__description {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 576px) {
