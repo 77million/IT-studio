@@ -10,7 +10,7 @@
     <title>IT-studio</title>
 </head>
 <body>
-    <header class="navbar navbar__mobile_fixed">
+    <header class="navbar navbar__mobile-fixed">
         <div class="container">
 
             <div class="navbar-top">
@@ -54,130 +54,50 @@
         </div>
     </header>
 
-    <section class="about">
-        <div class="container">
-
-            <div class="about__title">
-                <h2>Мы создаем мобильные приложения <br> для крупных корпораций</h2>
-                <p class="about-description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-            </div>
-            <div class="about-wrapper">
-                <div class="about-service">
-                    <img src="img/service-1.svg" alt="service-1" class="about-service__img" 
-                    />
-                    <div class="about-service__right">
-                        <h3 class="about-service__subtitle">Создание сайтов </h3>
-                        <p class="about-service__description">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
-                    </div>  
-                </div>
-                <div class="about-service">
-                    <img src="img/service-1.svg" alt="service-1" class="about-service__img" 
-                    />
-                    <div class="about-service__right">
-                        <h3 class="about-service__subtitle">Создание сайтов</h3>
-                        <p class="about-service__description">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
-                    </div>  
-                </div>
-                <div class="about-service">
-                    <img src="img/service-1.svg" alt="service-1" class="about-service__img" 
-                    />
-                    <div class="about-service__right">
-                        <h3 class="about-service__subtitle">Создание сайтов</h3>
-                        <p class="about-service__description">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
-                    </div>  
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- /.about -->
     <main>
+        <section class="about">
+            <div class="container">
 
+                <div class="about__title">
+                    <h2>Мы создаем мобильные приложения <br> для крупных корпораций</h2>
+                    <p class="about-description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                </div>
+                <div class="about-wrapper">
+                    <div class="about-service">
+                        <img src="img/service-1.svg" alt="service-1" class="about-service__img" 
+                        />
+                        <div class="about-service__right">
+                            <h3 class="about-service__subtitle">Создание сайтов </h3>
+                            <p class="about-service__description">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
+                        </div>  
+                    </div>
+                    <div class="about-service">
+                        <img src="img/service-1.svg" alt="service-1" class="about-service__img" 
+                        />
+                        <div class="about-service__right">
+                            <h3 class="about-service__subtitle">Создание сайтов</h3>
+                            <p class="about-service__description">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
+                        </div>  
+                    </div>
+                    <div class="about-service">
+                        <img src="img/service-1.svg" alt="service-1" class="about-service__img" 
+                        />
+                        <div class="about-service__right">
+                            <h3 class="about-service__subtitle">Создание сайтов</h3>
+                            <p class="about-service__description">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
+                        </div>  
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- /.about -->
+    
     </main>
+
     <footer>
 
     </footer>
-
-    <div class="modal" id="booking-modal">
-        <div class="modal__overlay"></div>
-        <!-- /.modal__overlay -->
-        <div class="modal__dialog">
-            <a href="#" class="modal__close">
-                <img src="img/close.svg" alt="icon: close">
-            </a>
-            <h3 class="modal__title modal__title--mb-3">Booking</h3>
-            <form action="send.php" method="POST" class="modal__form form">
-                <input 
-                type="text" 
-                class="input modal__input" 
-                placeholder="Your Full Name*" 
-                name="name" 
-                required 
-                minlength="2"
-                />
-                <input 
-                id="modal__booking-phone"
-                type="tel" 
-                class="input modal__input" 
-                placeholder="Phone Number*" 
-                name="phone" 
-                required
-                />
-                <input 
-                type="email" 
-                class="input modal__input" 
-                placeholder="Your Email*"
-                name="email"
-                required 
-                />
-                <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
-                <button class="button modal__button" type="submit">Send</button>
-                <span class="modal__info">* Required Fields</span>
-            </form>
-            </div>
-            <!-- /.modal__dialog -->
-        </div>
-        <!-- /.modal -->
-        <div class="modal" id="rating-modal">
-            <div class="modal__overlay"></div>
-            <!-- /.modal__overlay -->
-            <div class="modal__dialog">
-            <a href="#" class="modal__close">
-                <img src="img/close.svg" alt="icon: close">
-            </a>
-            <h3 class="modal__title modal__title--mb-3">Send us a feedback</h3>
-            <form action="send.php" method="POST" class="modal__form form">
-                <input 
-                type="text" 
-                class="input modal__input" 
-                placeholder="Your Full Name*" 
-                name="name" 
-                required
-                minlength="2"
-                />
-                <input 
-                id="modal__rating-phone"
-                type="tel" 
-                class="input modal__input" 
-                placeholder="Phone Number*" 
-                name="phone" 
-                required
-                />
-                <input 
-                type="email" 
-                class="input modal__input" 
-                placeholder="Email*" 
-                name="email" 
-                required
-                />
-                <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
-                <button class="button modal__button" type="submit">Send</button>
-                <span class="modal__info">* Required Fields</span>
-            </form>
-        </div>
-        <!-- /.modal__dialog -->
-      </div>
-      <!-- /.modal -->
     
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script> 
