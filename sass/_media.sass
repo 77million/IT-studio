@@ -43,13 +43,14 @@
       &__description
         font-size: 12px
   .navbar
-    &__mobile
-      &-fixed
-        position: fixed
-        left: 0
-        top: 0
-        right: 0
-        
+    &-top
+      &__mobile // фиксируем навигацию для мобильного меню
+        &-fixed
+          position: fixed
+          left: 0
+          top: 0
+          right: 0
+          z-index: 99  
     &-menu
       display: none
     .logo
