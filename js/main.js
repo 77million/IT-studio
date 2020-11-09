@@ -20,8 +20,8 @@ $(document).ready(function () {
 
   // mobile menu
   var menuButton = document.querySelector(".menu-button");
-  menuButton.addEventListener('click', function () {
-    console.log('Клик по кнопке меню')
+  menuButton.addEventListener("click", function () {
+    console.log("Клик по кнопке меню");
     // $(".navbar-bottom").toggleClass('navbar-bottom_visible');
   });
 
