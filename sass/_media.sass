@@ -50,11 +50,26 @@
           left: 0
           top: 0
           right: 0
-          z-index: 99  
+          z-index: 99 
+          background-color: $dark 
+          height: 115px
     &-bottom
       display: none
+      position: fixed
+
+      left: 0
+      right: 0
+      bottom: 0
+      top: 115px
       &_visible
         display: block
+        background-color: $text-color 
+    &-menu
+      margin: 30px 0 0 0
+      flex-direction: column
+      height: 100%
+      &__item
+        margin-bottom: 20px
     .logo
       &__image
         width: 80px
@@ -77,8 +92,10 @@
         height: 2px
         background-color: $light
     
-// @media (max-width: 576px)
-//   .navbar
+@media (max-width: 576px)
+  .navbar
+    &-menu
+      min-width: 300px
 //     .logo
 //       &__image
 //         width: 30px
