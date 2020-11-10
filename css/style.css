@@ -15,7 +15,8 @@
   font-weight: 800;
   font-style: normal;
   font-display: swap;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -135,7 +136,8 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -172,7 +174,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -319,7 +322,8 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -353,7 +357,8 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -440,9 +445,15 @@ template {
 }
 
 .navbar-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .navbar-top__menu-button {
@@ -451,12 +462,18 @@ template {
 
 .navbar-menu {
   margin: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-width: 573px;
   height: 90px;
   padding: 0 20px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   color: #ffffff;
 }
 
@@ -465,7 +482,9 @@ template {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .navbar-menu__link {
@@ -491,8 +510,10 @@ template {
   left: 50%;
   position: absolute;
   /*плавное изменение ширины линии */
+  -webkit-transition: width 0.3s ease-in-out;
   transition: width 0.3s ease-in-out;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .navbar-menu__link:hover::after, .navbar-menu__link:focus::after {
@@ -505,9 +526,16 @@ template {
 }
 
 .header-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 10rem;
   color: #ffffff;
 }
@@ -526,13 +554,19 @@ template {
 }
 
 .about-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0 1rem;
 }
 
 .about-service {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 1rem;
   max-width: 400px;
 }
@@ -560,7 +594,8 @@ template {
     margin-bottom: 5rem;
   }
   .about-wrapper {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .about-service {
     max-width: 430px;
@@ -584,7 +619,9 @@ template {
     margin-bottom: 2rem;
   }
   .about-wrapper {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .about__title {
     padding: 10px 60px;
@@ -619,8 +656,11 @@ template {
     right: 0;
     z-index: 99;
   }
-  .navbar-menu {
+  .navbar-bottom {
     display: none;
+  }
+  .navbar-bottom_visible {
+    display: block;
   }
   .navbar .logo__image {
     width: 80px;
@@ -628,13 +668,22 @@ template {
     padding-left: 40px;
   }
   .menu-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 18px;
     margin-top: 30px;
     padding: 0;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     border: none;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
