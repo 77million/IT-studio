@@ -805,6 +805,9 @@ template {
     line-height: 34px;
     margin-bottom: 2rem;
   }
+  .about {
+    margin-bottom: 2rem;
+  }
   .about-wrapper {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -822,6 +825,25 @@ template {
   }
   .about-service__right {
     padding: 1rem;
+  }
+  .about-us {
+    padding-top: 30px;
+  }
+  .about-us__desc {
+    margin-top: 30px;
+  }
+  .about-us h2 {
+    margin-top: 1rem;
+    padding: 0;
+  }
+  .about-us img {
+    width: 400px;
+  }
+  .about-us__number-block img {
+    width: 40px;
+  }
+  .about-us__number {
+    font-size: 32px;
   }
 }
 
