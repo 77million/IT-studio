@@ -59,6 +59,11 @@ img {
 
 a {
   text-decoration: none;
+  border-bottom: 1px solid #999999;
+}
+
+a:hover {
+  border: 0;
 }
 
 li {
@@ -599,6 +604,74 @@ template {
 
 .about-service__description {
   font-size: 14px;
+}
+
+.about-us {
+  display: block;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 7rem;
+  background-color: #F6F6F8;
+  padding-top: 100px;
+}
+
+.about-us h2 {
+  padding-top: 15px;
+  text-align: left;
+}
+
+.about-us__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 90px;
+}
+
+.about-us__title {
+  max-width: 490px;
+  padding-bottom: 5px;
+}
+
+.about-us hr {
+  width: 1110px;
+  height: 0px;
+  border: 1px solid #E0E0E0;
+  margin-bottom: 70px;
+}
+
+.about-us__numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about-us__number-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 104px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-us__number-block img {
+  padding-right: 15px;
+}
+
+.about-us__number-block p {
+  padding-top: 0;
+  line-height: 20px;
+}
+
+.about-us__number {
+  font-size: 36px;
+  color: #000000;
+  line-height: 53px;
+  margin: 0;
 }
 
 .modal__overlay {
