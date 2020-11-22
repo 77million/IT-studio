@@ -578,11 +578,18 @@ template {
   padding: 0 200px;
 }
 
+.about button {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
 .about-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 1rem;
+  padding: 0 1rem 3rem 1rem;
 }
 
 .about-service {
