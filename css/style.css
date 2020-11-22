@@ -844,7 +844,11 @@ template {
     margin-top: 1rem;
     padding: 0;
   }
-  .about-us img {
+  .about-us__link {
+    padding-bottom: 5px;
+  }
+  .about-us__image {
+    padding-top: 20px;
     width: 400px;
   }
   .about-us__number-block img {
