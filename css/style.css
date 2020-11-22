@@ -614,8 +614,6 @@ template {
 .about-us {
   display: block;
   margin: 0 auto;
-  display: block;
-  margin-bottom: 7rem;
   background-color: #F6F6F8;
   padding-top: 100px;
 }
@@ -654,6 +652,7 @@ template {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 
 .about-us__number-block {
@@ -680,6 +679,34 @@ template {
   color: #000000;
   line-height: 53px;
   margin: 0;
+}
+
+.all-services {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 7rem;
+  background-color: #504DC2;
+  padding-top: 100px;
+  height: 490px;
+}
+
+.all-services__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.all-services button {
+  margin: 40px;
+  margin-top: 4rem;
+}
+
+.all-services h2 {
+  color: #ffffff;
+  margin: 40px;
 }
 
 .modal__overlay {
@@ -951,6 +978,16 @@ template {
   }
   .about-us__img {
     width: 100%;
+  }
+  .all-services__title {
+    display: block;
+    text-align: center;
+  }
+  .all-services h2 {
+    margin: 0 0 70px 0;
+  }
+  .all-services button {
+    margin: 0;
   }
 }
 
