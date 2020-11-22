@@ -68,6 +68,10 @@ a:hover {
   border: 0;
 }
 
+.link {
+  border-bottom: 1px solid #999999;
+}
+
 li {
   list-style-type: none;
 }
@@ -633,10 +637,6 @@ template {
 .about-us__title {
   max-width: 490px;
   padding-bottom: 5px;
-}
-
-.about-us__link {
-  border-bottom: 1px solid #999999;
 }
 
 .about-us hr {

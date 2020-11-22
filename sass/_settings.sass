@@ -28,7 +28,6 @@ body
   font-family: 'Montserrat', sans-serif
   background-color: $secondary
   color: $text-color
-  
 .container
   margin: 0 auto
   max-width: 1170px
@@ -53,8 +52,10 @@ img
   max-width: 100% // чтобы картинка не вываливалась из родительского блока
 a 
   text-decoration: none
-  &:hover
+  &:hover // чтобы подчеркивание ссылки исчезало при наведении
     border: 0
+.link // чтобы подчеркивание ссылки исчезало при наведении
+  border-bottom: 1px solid $description-color
 li
   list-style-type: none
 p
@@ -79,6 +80,7 @@ button
   border-radius: 30px
   cursor: pointer
   outline: 0
+
 .input
   background-color: #ffffff
   border-radius: 4px
