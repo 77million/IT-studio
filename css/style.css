@@ -117,6 +117,13 @@ button {
   border: none;
 }
 
+hr {
+  width: 1110px;
+  height: 0px;
+  border: 1px solid #E0E0E0;
+  margin-bottom: 70px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -568,7 +575,6 @@ template {
 .about {
   display: block;
   margin: 0 auto;
-  display: block;
   margin-bottom: 7rem;
 }
 
@@ -642,13 +648,6 @@ template {
 .about-us__title {
   max-width: 490px;
   padding-bottom: 5px;
-}
-
-.about-us hr {
-  width: 1110px;
-  height: 0px;
-  border: 1px solid #E0E0E0;
-  margin-bottom: 70px;
 }
 
 .about-us__numbers {
@@ -728,6 +727,8 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: -250px;
+  margin-bottom: 70px;
 }
 
 .modal__overlay {
