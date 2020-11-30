@@ -749,7 +749,13 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.all-projects img {
   padding-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .all-projects__button {
@@ -1039,6 +1045,11 @@ template {
   }
   .all-services button {
     margin: 0;
+  }
+  .all-projects__title {
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 50px;
   }
 }
 
