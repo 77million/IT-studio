@@ -715,11 +715,6 @@ template {
   margin: 40px;
 }
 
-.all-services__item {
-  width: 350px;
-  padding: 15px;
-}
-
 .all-items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -727,8 +722,15 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: -250px;
   margin-bottom: 70px;
+}
+
+.all-items__item {
+  width: 350px;
+  padding: 15px;
 }
 
 .modal__overlay {
