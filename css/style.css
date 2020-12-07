@@ -42,7 +42,7 @@ h1 {
 }
 
 h2 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 53px;
   text-align: center;
@@ -72,6 +72,10 @@ a:hover {
   border-bottom: 1px solid #999999;
 }
 
+.light {
+  color: #ffffff;
+}
+
 li {
   list-style-type: none;
 }
@@ -85,7 +89,7 @@ p {
   max-width: 1170px;
 }
 
-button {
+.button {
   width: 200px;
   height: 45px;
   padding: 12px;
@@ -510,7 +514,6 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #ffffff;
 }
 
 .navbar-menu__item {
@@ -573,7 +576,6 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 10rem;
-  color: #ffffff;
 }
 
 .about {
@@ -588,7 +590,7 @@ template {
   padding: 0 200px;
 }
 
-.about button {
+.about .button {
   position: relative;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
@@ -709,7 +711,7 @@ template {
           justify-content: space-between;
 }
 
-.all-services button {
+.all-services .button {
   margin: 40px;
   margin-top: 4rem;
 }
@@ -735,6 +737,10 @@ template {
 .all-items__item {
   width: 350px;
   padding: 15px;
+}
+
+.all-projects {
+  padding-bottom: 30px;
 }
 
 .all-projects__title {
@@ -774,9 +780,40 @@ template {
   background-position: top;
   background-size: cover;
   margin: auto;
-  min-height: 900px;
+  height: 570px;
   margin-bottom: 7rem;
-  padding-top: 10px;
+  padding-top: 30px;
+}
+
+.video__title-h2 {
+  margin-bottom: 0;
+}
+
+.video__title-paragraph {
+  padding-bottom: 30px;
+}
+
+.video__item-image {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.video__button {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 300px;
+  height: 100px;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: 0;
+}
+
+p {
+  text-align: center;
 }
 
 .modal__overlay {
