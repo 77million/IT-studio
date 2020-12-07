@@ -793,14 +793,18 @@ template {
   padding-bottom: 30px;
 }
 
-.video__item-image {
+.video__item {
   position: relative;
+}
+
+.video__item-image {
   display: block;
   margin: 0 auto;
 }
 
 .video__button {
   position: absolute;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
@@ -810,6 +814,19 @@ template {
   border-radius: 50px;
   cursor: pointer;
   outline: 0;
+  background-color: transparent;
+  outline: none;
+  color: #ffffff;
+  -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.video__button:hover, .video__button:active {
+  color: #2d2e2f;
+  background-color: #ffffff;
+  opacity: .75;
+  -webkit-transition: background-color 0.3s ease-in, color 0.3s ease-in;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
 p {
