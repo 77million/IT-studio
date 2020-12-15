@@ -1201,5 +1201,15 @@ p {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .mailing {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .mailing__form {
+    width: 350px;
+  }
+  .mailing__form-button {
+    width: 140px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
