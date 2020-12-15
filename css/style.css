@@ -871,7 +871,9 @@ p {
           box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border-radius: 30px;
   overflow: hidden;
-  padding-left: 15px;
+  font-size: 13px;
+  color: #999999;
+  padding-left: 35px;
   padding-right: 200px;
 }
 
