@@ -51,9 +51,10 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
+  line-height: 22px;
   text-align: center;
 }
 
@@ -797,6 +798,7 @@ template {
 
 .video__item {
   position: relative;
+  color: #999999;
 }
 
 .video__item-image {
@@ -837,18 +839,12 @@ p {
 
 .mailing {
   display: block;
+  background-color: #ffffff;
 }
 
 .mailing__title {
-  margin-top: 30px;
+  margin-top: 70px;
   margin-bottom: 30px;
-}
-
-.mailing__title-h3 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
 }
 
 .mailing__form {
@@ -894,6 +890,54 @@ p {
   margin-top: 35px;
   margin-bottom: 85px;
   color: #999999;
+}
+
+.footer {
+  margin-top: 70px;
+  background-color: #f6f6f8;
+}
+
+.footer__block {
+  padding: 0 25px;
+}
+
+.footer__title {
+  left: 0;
+  padding-bottom: 15px;
+}
+
+.footer__info-lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__icon-wrapper {
+  width: 25px;
+}
+
+.footer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 25px;
+}
+
+.footer__item-link {
+  text-decoration: none;
+  color: #999999;
+}
+
+.footer__ul {
+  padding-left: 0;
 }
 
 .modal__overlay {
