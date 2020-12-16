@@ -31,9 +31,9 @@
       cursor: pointer
       outline: 0
       background-color: transparent
-      // background-image: none
       outline: none
       color: $light
+      padding-left: 70px // сдвигаем надпись в кнопке вправо
       transition: background-color 0.2s ease-out, color 0.2s ease-out
   &__button:hover,
   &__button:active
@@ -41,5 +41,11 @@
     background-color: $light
     opacity: .75
     transition: background-color 0.3s ease-in, color 0.3s ease-in
+  &__image
+    position: absolute
+    left: 40px
+    top: 18px
+    border-radius: 50%
+    border: 1px solid $text-color
 p
   text-align: center

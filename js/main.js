@@ -28,4 +28,6 @@ $(document).ready(function () {
     // $(".navbar-bottom").toggleClass('navbar-bottom_visible');
   });
 
+  
+
 });

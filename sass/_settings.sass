@@ -84,6 +84,12 @@ p
   border-radius: 30px
   cursor: pointer
   outline: 0
+  &:hover,
+  &:active
+    background-color: $modal-color
+    border: 1px solid $light
+    transition: border 0.2s ease-out, color 0.2s ease-out
+    transition: background-color 0.3s ease-in, color 0.3s ease-in
 .input
   background-color: #ffffff
   border-radius: 4px

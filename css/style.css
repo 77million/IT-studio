@@ -108,6 +108,15 @@ p {
   outline: 0;
 }
 
+.button:hover, .button:active {
+  background-color: #2F52CC;
+  border: 1px solid #ffffff;
+  -webkit-transition: border 0.2s ease-out, color 0.2s ease-out;
+  transition: border 0.2s ease-out, color 0.2s ease-out;
+  -webkit-transition: background-color 0.3s ease-in, color 0.3s ease-in;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
 .input {
   background-color: #ffffff;
   border-radius: 4px;
@@ -821,6 +830,7 @@ template {
   background-color: transparent;
   outline: none;
   color: #ffffff;
+  padding-left: 70px;
   -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
   transition: background-color 0.2s ease-out, color 0.2s ease-out;
 }
@@ -831,6 +841,14 @@ template {
   opacity: .75;
   -webkit-transition: background-color 0.3s ease-in, color 0.3s ease-in;
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+.video__image {
+  position: absolute;
+  left: 40px;
+  top: 18px;
+  border-radius: 50%;
+  border: 1px solid #515050;
 }
 
 p {
@@ -936,8 +954,20 @@ p {
   color: #999999;
 }
 
+.footer__item-link:hover, .footer__item-link:active {
+  color: #2d2e2f;
+}
+
 .footer__ul {
   padding-left: 0;
+}
+
+.footer__copyright {
+  display: block;
+  text-align: center;
+  margin-top: -45px;
+  margin-bottom: 35px;
+  color: #999999;
 }
 
 .modal__overlay {
