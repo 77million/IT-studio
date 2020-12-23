@@ -216,7 +216,7 @@
 
             <div class="video__item">
                 <img class="video__item-image" src="img/video.png" alt="video">
-                <button data-toggle="modal" class="video__button" data-href="#booking-modal" type="submit"><img class="video__image" src="img/play-button.png" alt="Icon: video" />Смотреть видео</button>
+                <button data-toggle="video-modal" class="video__button" data-href="#video-modal" type="submit"><img class="video__image" src="img/play-button.png" alt="Icon: video" />Смотреть видео</button>
             </div>
         </div>
         
@@ -490,6 +490,20 @@
           <button class="button modal__button" type="submit">Send</button>
           <span class="modal__info">* Required Fields</span>
         </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <div class="video-modal" id="video-modal">
+      <div class="video-modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="video-modal__dialog">
+        <a href="#" class="video-modal__close">
+          <img src="img/close.svg" alt="icon: close">
+        </a>
+
+        <iframe width="65%" height="100%" src="https://www.youtube.com/embed/5osJMAnzwkE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <!-- /.modal__dialog -->
     </div>
